@@ -32,7 +32,7 @@ COPY --from=GO_TOOLS /go/bin/node-prune /usr/local/bin/node-prune
 
 RUN node-prune
 
-FROM node:alpine
+FROM node:23.11.1-alpine3.21
 
 WORKDIR /usr/src/app
 
